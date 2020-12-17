@@ -13,8 +13,6 @@
 		2852D5DB257B54DF006EB52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2852D5D9257B54DF006EB52A /* Main.storyboard */; };
 		2852D5DD257B54E0006EB52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2852D5DC257B54E0006EB52A /* Assets.xcassets */; };
 		2852D5E0257B54E0006EB52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2852D5DE257B54E0006EB52A /* LaunchScreen.storyboard */; };
-		2852D5EB257B54E0006EB52A /* iOSCarePlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2852D5EA257B54E0006EB52A /* iOSCarePlusTests.swift */; };
-		2852D5F6257B54E0006EB52A /* iOSCarePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2852D5F5257B54E0006EB52A /* iOSCarePlusUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		2852D5DF257B54E0006EB52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2852D5E1257B54E0006EB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2852D5E6257B54E0006EB52A /* iOSCarePlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCarePlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2852D5EA257B54E0006EB52A /* iOSCarePlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCarePlusTests.swift; sourceTree = "<group>"; };
-		2852D5EC257B54E0006EB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2852D5F1257B54E0006EB52A /* iOSCarePlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCarePlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2852D5F5257B54E0006EB52A /* iOSCarePlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCarePlusUITests.swift; sourceTree = "<group>"; };
-		2852D5F7257B54E0006EB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				2852D5D2257B54DF006EB52A /* iOSCarePlus */,
-				2852D5E9257B54E0006EB52A /* iOSCarePlusTests */,
-				2852D5F4257B54E0006EB52A /* iOSCarePlusUITests */,
 				2852D5D1257B54DF006EB52A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				2852D5E1257B54E0006EB52A /* Info.plist */,
 			);
 			path = iOSCarePlus;
-			sourceTree = "<group>";
-		};
-		2852D5E9257B54E0006EB52A /* iOSCarePlusTests */ = {
-			isa = PBXGroup;
-			children = (
-				2852D5EA257B54E0006EB52A /* iOSCarePlusTests.swift */,
-				2852D5EC257B54E0006EB52A /* Info.plist */,
-			);
-			path = iOSCarePlusTests;
-			sourceTree = "<group>";
-		};
-		2852D5F4257B54E0006EB52A /* iOSCarePlusUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2852D5F5257B54E0006EB52A /* iOSCarePlusUITests.swift */,
-				2852D5F7257B54E0006EB52A /* Info.plist */,
-			);
-			path = iOSCarePlusUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2852D5EB257B54E0006EB52A /* iOSCarePlusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2852D5F6257B54E0006EB52A /* iOSCarePlusUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
