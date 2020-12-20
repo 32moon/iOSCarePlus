@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,24 +13,13 @@
 		2852D5DB257B54DF006EB52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2852D5D9257B54DF006EB52A /* Main.storyboard */; };
 		2852D5DD257B54E0006EB52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2852D5DC257B54E0006EB52A /* Assets.xcassets */; };
 		2852D5E0257B54E0006EB52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2852D5DE257B54E0006EB52A /* LaunchScreen.storyboard */; };
+		28666A89258B93B600DD1754 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28666A88258B93B600DD1754 /* GameListViewController.swift */; };
+		28666A91258B9A1D00DD1754 /* GameItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28666A90258B9A1D00DD1754 /* GameItemModel.swift */; };
+		28666A99258B9B6200DD1754 /* GameItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28666A98258B9B6200DD1754 /* GameItemTableViewCell.swift */; };
+		28666A9F258BA62600DD1754 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28666A9E258BA62600DD1754 /* Alamofire */; };
+		28666AA5258BAA8900DD1754 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28666AA4258BAA8900DD1754 /* NewGameResponse.swift */; };
+		28666AA9258BB31D00DD1754 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 28666AA8258BB31D00DD1754 /* Kingfisher */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2852D5E7257B54E0006EB52A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2852D5C8257B54DF006EB52A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2852D5CF257B54DF006EB52A;
-			remoteInfo = iOSCarePlus;
-		};
-		2852D5F2257B54E0006EB52A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2852D5C8257B54DF006EB52A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2852D5CF257B54DF006EB52A;
-			remoteInfo = iOSCarePlus;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2852D5D0257B54DF006EB52A /* iOSCarePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCarePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +30,10 @@
 		2852D5DC257B54E0006EB52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2852D5DF257B54E0006EB52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2852D5E1257B54E0006EB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2852D5E6257B54E0006EB52A /* iOSCarePlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCarePlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2852D5F1257B54E0006EB52A /* iOSCarePlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCarePlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28666A88258B93B600DD1754 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		28666A90258B9A1D00DD1754 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
+		28666A98258B9B6200DD1754 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
+		28666AA4258BAA8900DD1754 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,20 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2852D5E3257B54E0006EB52A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2852D5EE257B54E0006EB52A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				28666AA9258BB31D00DD1754 /* Kingfisher in Frameworks */,
+				28666A9F258BA62600DD1754 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				2852D5D0257B54DF006EB52A /* iOSCarePlus.app */,
-				2852D5E6257B54E0006EB52A /* iOSCarePlusTests.xctest */,
-				2852D5F1257B54E0006EB52A /* iOSCarePlusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +75,10 @@
 				2852D5DC257B54E0006EB52A /* Assets.xcassets */,
 				2852D5DE257B54E0006EB52A /* LaunchScreen.storyboard */,
 				2852D5E1257B54E0006EB52A /* Info.plist */,
+				28666A88258B93B600DD1754 /* GameListViewController.swift */,
+				28666AA4258BAA8900DD1754 /* NewGameResponse.swift */,
+				28666A90258B9A1D00DD1754 /* GameItemModel.swift */,
+				28666A98258B9B6200DD1754 /* GameItemTableViewCell.swift */,
 			);
 			path = iOSCarePlus;
 			sourceTree = "<group>";
@@ -119,45 +100,13 @@
 			dependencies = (
 			);
 			name = iOSCarePlus;
+			packageProductDependencies = (
+				28666A9E258BA62600DD1754 /* Alamofire */,
+				28666AA8258BB31D00DD1754 /* Kingfisher */,
+			);
 			productName = iOSCarePlus;
 			productReference = 2852D5D0257B54DF006EB52A /* iOSCarePlus.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2852D5E5257B54E0006EB52A /* iOSCarePlusTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2852D5FD257B54E0006EB52A /* Build configuration list for PBXNativeTarget "iOSCarePlusTests" */;
-			buildPhases = (
-				2852D5E2257B54E0006EB52A /* Sources */,
-				2852D5E3257B54E0006EB52A /* Frameworks */,
-				2852D5E4257B54E0006EB52A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2852D5E8257B54E0006EB52A /* PBXTargetDependency */,
-			);
-			name = iOSCarePlusTests;
-			productName = iOSCarePlusTests;
-			productReference = 2852D5E6257B54E0006EB52A /* iOSCarePlusTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2852D5F0257B54E0006EB52A /* iOSCarePlusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2852D600257B54E0006EB52A /* Build configuration list for PBXNativeTarget "iOSCarePlusUITests" */;
-			buildPhases = (
-				2852D5ED257B54E0006EB52A /* Sources */,
-				2852D5EE257B54E0006EB52A /* Frameworks */,
-				2852D5EF257B54E0006EB52A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2852D5F3257B54E0006EB52A /* PBXTargetDependency */,
-			);
-			name = iOSCarePlusUITests;
-			productName = iOSCarePlusUITests;
-			productReference = 2852D5F1257B54E0006EB52A /* iOSCarePlusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -171,14 +120,6 @@
 					2852D5CF257B54DF006EB52A = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					2852D5E5257B54E0006EB52A = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 2852D5CF257B54DF006EB52A;
-					};
-					2852D5F0257B54E0006EB52A = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 2852D5CF257B54DF006EB52A;
-					};
 				};
 			};
 			buildConfigurationList = 2852D5CB257B54DF006EB52A /* Build configuration list for PBXProject "iOSCarePlus" */;
@@ -190,13 +131,15 @@
 				Base,
 			);
 			mainGroup = 2852D5C7257B54DF006EB52A;
+			packageReferences = (
+				28666A9D258BA62600DD1754 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				28666AA7258BB31D00DD1754 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2852D5D1257B54DF006EB52A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2852D5CF257B54DF006EB52A /* iOSCarePlus */,
-				2852D5E5257B54E0006EB52A /* iOSCarePlusTests */,
-				2852D5F0257B54E0006EB52A /* iOSCarePlusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,20 +152,6 @@
 				2852D5E0257B54E0006EB52A /* LaunchScreen.storyboard in Resources */,
 				2852D5DD257B54E0006EB52A /* Assets.xcassets in Resources */,
 				2852D5DB257B54DF006EB52A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2852D5E4257B54E0006EB52A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2852D5EF257B54E0006EB52A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,40 +183,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28666A99258B9B6200DD1754 /* GameItemTableViewCell.swift in Sources */,
+				28666A89258B93B600DD1754 /* GameListViewController.swift in Sources */,
+				28666AA5258BAA8900DD1754 /* NewGameResponse.swift in Sources */,
 				2852D5D8257B54DF006EB52A /* ViewController.swift in Sources */,
 				2852D5D4257B54DF006EB52A /* AppDelegate.swift in Sources */,
 				2852D5D6257B54DF006EB52A /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2852D5E2257B54E0006EB52A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2852D5ED257B54E0006EB52A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				28666A91258B9A1D00DD1754 /* GameItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2852D5E8257B54E0006EB52A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2852D5CF257B54DF006EB52A /* iOSCarePlus */;
-			targetProxy = 2852D5E7257B54E0006EB52A /* PBXContainerItemProxy */;
-		};
-		2852D5F3257B54E0006EB52A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2852D5CF257B54DF006EB52A /* iOSCarePlus */;
-			targetProxy = 2852D5F2257B54E0006EB52A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2852D5D9257B54DF006EB52A /* Main.storyboard */ = {
@@ -461,86 +367,6 @@
 			};
 			name = Release;
 		};
-		2852D5FE257B54E0006EB52A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iOSCarePlusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.moon.iOSCarePlusTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCarePlus.app/iOSCarePlus";
-			};
-			name = Debug;
-		};
-		2852D5FF257B54E0006EB52A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iOSCarePlusTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.moon.iOSCarePlusTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCarePlus.app/iOSCarePlus";
-			};
-			name = Release;
-		};
-		2852D601257B54E0006EB52A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iOSCarePlusUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.moon.iOSCarePlusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOSCarePlus;
-			};
-			name = Debug;
-		};
-		2852D602257B54E0006EB52A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iOSCarePlusUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.moon.iOSCarePlusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOSCarePlus;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,25 +388,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2852D5FD257B54E0006EB52A /* Build configuration list for PBXNativeTarget "iOSCarePlusTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2852D5FE257B54E0006EB52A /* Debug */,
-				2852D5FF257B54E0006EB52A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2852D600257B54E0006EB52A /* Build configuration list for PBXNativeTarget "iOSCarePlusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2852D601257B54E0006EB52A /* Debug */,
-				2852D602257B54E0006EB52A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28666A9D258BA62600DD1754 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		28666AA7258BB31D00DD1754 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28666A9E258BA62600DD1754 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28666A9D258BA62600DD1754 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		28666AA8258BB31D00DD1754 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28666AA7258BB31D00DD1754 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2852D5C8257B54DF006EB52A /* Project object */;
 }
