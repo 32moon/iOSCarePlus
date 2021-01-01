@@ -7,18 +7,11 @@
 
 import Foundation
 
-struct NewGameResponse: Decodable {
-    let contents: [NewGameContent]
-    let length: Int
-    let offset: Int
-    let total: Int
-}
-
 struct NewGameContent: Decodable {
     let formalName: String
     let heroBannerURL: String
     let gameId: Int
-    let screenshots: [NewGameScreenshots]?
+    let screenshots: [NewGameScreenshot]
     
     enum CodingKeys: String, CodingKey {
         case formalName = "formal_name"
@@ -26,11 +19,21 @@ struct NewGameContent: Decodable {
         case gameId = "id"
         case screenshots
     }
-    struct NewGameScreenshots: Decodable {
-        let images: [NewGameURL]
+    struct NewGameScreenshot: Decodable {
+        let images: [NewGameImages]
+    }
+    struct NewGameImages: Decodable {
+        let url: String
     }
     
     struct NewGameURL: Decodable {
         let url: String
     }
+}
+
+struct NewGameResponse: Decodable {
+    var contents: [NewGameContent]
+    let length: Int
+    let offset: Int
+    let total: Int
 }
