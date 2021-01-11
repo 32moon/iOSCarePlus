@@ -19,6 +19,8 @@
 		28666A9F258BA62600DD1754 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28666A9E258BA62600DD1754 /* Alamofire */; };
 		28666AA5258BAA8900DD1754 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28666AA4258BAA8900DD1754 /* NewGameResponse.swift */; };
 		286AEEC125962A8F00C89154 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AEEC025962A8F00C89154 /* IndicatorCell.swift */; };
+		287E2E0525A83582002AE9C1 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E2E0425A83582002AE9C1 /* SelectableButton.swift */; };
+		287E2E0925A8374B002AE9C1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287E2E0825A8374B002AE9C1 /* Colors.xcassets */; };
 		287FC9952593AB590064B8DF /* GameItemCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FC9942593AB590064B8DF /* GameItemCodeTableViewCell.swift */; };
 		74D5851E43BE241C4AE14AF4 /* libPods-iOSCarePlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2DB10534E38408E3FF25E1 /* libPods-iOSCarePlus.a */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,8 @@
 		28666A98258B9B6200DD1754 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
 		28666AA4258BAA8900DD1754 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
 		286AEEC025962A8F00C89154 /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		287E2E0425A83582002AE9C1 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		287E2E0825A8374B002AE9C1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		287FC9942593AB590064B8DF /* GameItemCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemCodeTableViewCell.swift; sourceTree = "<group>"; };
 		28EEAEF5517EE54B502487B9 /* Pods-iOSCarePlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCarePlus.release.xcconfig"; path = "Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus.release.xcconfig"; sourceTree = "<group>"; };
 		5C2DB10534E38408E3FF25E1 /* libPods-iOSCarePlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCarePlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,7 @@
 				2852D5DE257B54E0006EB52A /* LaunchScreen.storyboard */,
 				2852D5E1257B54E0006EB52A /* Info.plist */,
 				287FC9972593B9C00064B8DF /* GameList */,
+				287E2E0825A8374B002AE9C1 /* Colors.xcassets */,
 			);
 			path = iOSCarePlus;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 				28666A88258B93B600DD1754 /* GameListViewController.swift */,
 				287FC9992593BA3B0064B8DF /* Model */,
 				287FC9982593B9E50064B8DF /* Cell */,
+				287E2E0425A83582002AE9C1 /* SelectableButton.swift */,
 			);
 			path = GameList;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2852D5E0257B54E0006EB52A /* LaunchScreen.storyboard in Resources */,
+				287E2E0925A8374B002AE9C1 /* Colors.xcassets in Resources */,
 				2852D5DD257B54E0006EB52A /* Assets.xcassets in Resources */,
 				2852D5DB257B54DF006EB52A /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 				28666A99258B9B6200DD1754 /* GameItemTableViewCell.swift in Sources */,
 				286AEEC125962A8F00C89154 /* IndicatorCell.swift in Sources */,
 				287FC9952593AB590064B8DF /* GameItemCodeTableViewCell.swift in Sources */,
+				287E2E0525A83582002AE9C1 /* SelectableButton.swift in Sources */,
 				28666A89258B93B600DD1754 /* GameListViewController.swift in Sources */,
 				28666AA5258BAA8900DD1754 /* NewGameResponse.swift in Sources */,
 				2852D5D8257B54DF006EB52A /* ViewController.swift in Sources */,

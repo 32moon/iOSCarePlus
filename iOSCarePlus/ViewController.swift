@@ -11,6 +11,10 @@ class ViewController: UIViewController {
     @IBOutlet private weak var logoView: UIView!
     @IBOutlet private weak var logoViewTopConstraint: NSLayoutConstraint!
     @IBOutlet private weak var backgroundImageViewLeadingConstraint: NSLayoutConstraint!
+
+    @IBAction private func logoTapAction(_ sender: UITapGestureRecognizer) {
+        blinkLogoAnimation()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +28,6 @@ class ViewController: UIViewController {
         animationSettingDefault()
         appearLogoViewAnimation { [weak self] in
             self?.slideBackgroundImageAnimation()
-            self?.blinkLogoAnimation()
         }
     }
     

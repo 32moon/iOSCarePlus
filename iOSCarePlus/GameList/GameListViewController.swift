@@ -10,6 +10,31 @@ import UIKit
 
 class GameListViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var newButton: SelectableButton!
+    @IBOutlet private weak var saleButton: SelectableButton!
+    @IBOutlet private weak var selectedLineConstraint: NSLayoutConstraint!
+    
+    @IBAction private func newButtonTouchUp(_ sender: Any) {
+        newButton.isSelected = true
+        saleButton.isSelected = false
+//        newButton.select(true)
+//        saleButton.select(false)
+        UIView.animate(withDuration: 0.1) { [weak self] in
+            self?.selectedLineConstraint.constant = 0
+            self?.view.layoutIfNeeded()
+        }
+    }
+    @IBAction private func saleButtonTouchUp(_ sender: Any) {
+        newButton.isSelected = false
+        saleButton.isSelected = true
+        //        newButton.select(false)
+        //        saleButton.select(true)
+        let constant: CGFloat = saleButton.center.x - newButton.center.x
+        UIView.animate(withDuration: 0.1) { [weak self] in
+            self?.selectedLineConstraint.constant = constant
+            self?.view.layoutIfNeeded()
+        }
+    }
     // 다른곳 에서도 사용할 수 있도록 전역변수로 빼준다.
     // computed프로퍼티(연산프로퍼티) ---> 변수 값을 계산해서 반환해 준다.
     // 원래는 get,retuen형태이지만 get만 있는 경우 다음과 같이 표현이 가능.
@@ -30,6 +55,10 @@ class GameListViewController: UIViewController {
         
         //코드로 오토레이아웃을 잡았을 때는 테이블뷰의 셀을 코드로 등록해 주어야 함.
         //tableView.register(GameItemCodeTableViewCell.self, forCellReuseIdentifier: "GameItemCodeTableViewCell")
+        newButton.isSelected = true
+        saleButton.isSelected = false
+//        newButton.select(true)
+//        saleButton.select(false)
         newGameListAPICall()
     }
     
