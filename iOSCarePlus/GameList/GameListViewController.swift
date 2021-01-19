@@ -13,12 +13,33 @@ class GameListViewController: UIViewController {
     @IBOutlet private weak var newButton: SelectableButton!
     @IBOutlet private weak var saleButton: SelectableButton!
     @IBOutlet private weak var selectedLineConstraint: NSLayoutConstraint!
+    // 다른곳 에서도 사용할 수 있도록 전역변수로 빼준다.
+    // computed프로퍼티(연산프로퍼티) ---> 변수 값을 계산해서 반환해 준다.
+    // 원래는 get,retuen형태이지만 get만 있는 경우 다음과 같이 표현이 가능.
+    private var newGameListURL: String {
+        "https://ec.nintendo.com/api/KR/ko/search/new?count=\(newCount)&offset=\(newOffset)"
+    }
+    private var saleGameListURL: String {
+        "https://ec.nintendo.com/api/KR/ko/search/sales?count=\(newCount)&offset=\(newOffset)"
+    }
+    private lazy var gameListURL: String = newGameListURL
+    private var newCount: Int = 10
+    private var newOffset: Int = 100
+    private var isEnd: Bool = false
+    var model: NewGameResponse? {
+        didSet {
+            tableView.reloadData() // 비동기 시스템, 불러온 데이터를 테이블 뷰에 다시 리로드해서 보여주도록 한다.
+        }
+    }
     
     @IBAction private func newButtonTouchUp(_ sender: Any) {
         newButton.isSelected = true
         saleButton.isSelected = false
-//        newButton.select(true)
-//        saleButton.select(false)
+        //        newButton.select(true)
+        //        saleButton.select(false)
+        newOffset = 0
+        model?.contents.removeAll()
+        gameListURL = newGameListURL
         UIView.animate(withDuration: 0.1) { [weak self] in
             self?.selectedLineConstraint.constant = 0
             self?.view.layoutIfNeeded()
@@ -29,24 +50,13 @@ class GameListViewController: UIViewController {
         saleButton.isSelected = true
         //        newButton.select(false)
         //        saleButton.select(true)
+        newOffset = 0
+        model?.contents.removeAll()
+        gameListURL = saleGameListURL
         let constant: CGFloat = saleButton.center.x - newButton.center.x
         UIView.animate(withDuration: 0.1) { [weak self] in
             self?.selectedLineConstraint.constant = constant
             self?.view.layoutIfNeeded()
-        }
-    }
-    // 다른곳 에서도 사용할 수 있도록 전역변수로 빼준다.
-    // computed프로퍼티(연산프로퍼티) ---> 변수 값을 계산해서 반환해 준다.
-    // 원래는 get,retuen형태이지만 get만 있는 경우 다음과 같이 표현이 가능.
-    var newGameListURL: String {
-        "https://ec.nintendo.com/api/KR/ko/search/new?count=\(newCount)&offset=\(newOffset)"
-    }
-    var newCount: Int = 10
-    var newOffset: Int = 100
-    var isEnd: Bool = false
-    var model: NewGameResponse? {
-        didSet {
-            tableView.reloadData() // 비동기 시스템, 불러온 데이터를 테이블 뷰에 다시 리로드해서 보여주도록 한다.
         }
     }
     
@@ -57,8 +67,8 @@ class GameListViewController: UIViewController {
         //tableView.register(GameItemCodeTableViewCell.self, forCellReuseIdentifier: "GameItemCodeTableViewCell")
         newButton.isSelected = true
         saleButton.isSelected = false
-//        newButton.select(true)
-//        saleButton.select(false)
+        //        newButton.select(true)
+        //        saleButton.select(false)
         newGameListAPICall()
     }
     
@@ -68,7 +78,7 @@ class GameListViewController: UIViewController {
     
     private func newGameListAPICall() {
         // AF로 리퀘스트를 보내는데, 주소는 newGameListURL, 그 결과를 JSON형태로 받아오고 response클로저에서 작업을 진행한다.
-        AF.request(newGameListURL).responseJSON { [weak self] response in
+        AF.request(gameListURL).responseJSON { [weak self] response in
             guard let data = response.data else { return }
             let decoder: JSONDecoder = JSONDecoder()
             guard let model: NewGameResponse = try? decoder.decode(NewGameResponse.self, from: data) else {
