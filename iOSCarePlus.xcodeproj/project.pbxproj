@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284AB16425B93318008C4894 /* GameDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284AB16325B93318008C4894 /* GameDetailPageViewController.swift */; };
+		284AB16725B93336008C4894 /* GameDetailImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284AB16625B93336008C4894 /* GameDetailImageViewController.swift */; };
+		284AB16A25B95CDF008C4894 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284AB16925B95CDF008C4894 /* GameDetailViewController.swift */; };
 		2852D5D4257B54DF006EB52A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2852D5D3257B54DF006EB52A /* AppDelegate.swift */; };
 		2852D5D6257B54DF006EB52A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2852D5D5257B54DF006EB52A /* SceneDelegate.swift */; };
 		2852D5D8257B54DF006EB52A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2852D5D7257B54DF006EB52A /* ViewController.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284AB16325B93318008C4894 /* GameDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailPageViewController.swift; sourceTree = "<group>"; };
+		284AB16625B93336008C4894 /* GameDetailImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailImageViewController.swift; sourceTree = "<group>"; };
+		284AB16925B95CDF008C4894 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		2852D5D0257B54DF006EB52A /* iOSCarePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCarePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2852D5D3257B54DF006EB52A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2852D5D5257B54DF006EB52A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		284AB15D25B83C38008C4894 /* GameDetail */ = {
+			isa = PBXGroup;
+			children = (
+				284AB16925B95CDF008C4894 /* GameDetailViewController.swift */,
+				284AB16325B93318008C4894 /* GameDetailPageViewController.swift */,
+				284AB16625B93336008C4894 /* GameDetailImageViewController.swift */,
+			);
+			path = GameDetail;
+			sourceTree = "<group>";
+		};
 		2852D5C7257B54DF006EB52A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +114,7 @@
 				2852D5DE257B54E0006EB52A /* LaunchScreen.storyboard */,
 				2852D5E1257B54E0006EB52A /* Info.plist */,
 				287FC9972593B9C00064B8DF /* GameList */,
+				284AB15D25B83C38008C4894 /* GameDetail */,
 				287E2E0825A8374B002AE9C1 /* Colors.xcassets */,
 			);
 			path = iOSCarePlus;
@@ -263,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284AB16425B93318008C4894 /* GameDetailPageViewController.swift in Sources */,
+				284AB16725B93336008C4894 /* GameDetailImageViewController.swift in Sources */,
 				28666A99258B9B6200DD1754 /* GameItemTableViewCell.swift in Sources */,
 				286AEEC125962A8F00C89154 /* IndicatorCell.swift in Sources */,
 				287FC9952593AB590064B8DF /* GameItemCodeTableViewCell.swift in Sources */,
@@ -273,6 +292,7 @@
 				2852D5D4257B54DF006EB52A /* AppDelegate.swift in Sources */,
 				2852D5D6257B54DF006EB52A /* SceneDelegate.swift in Sources */,
 				28666A91258B9A1D00DD1754 /* GameItemModel.swift in Sources */,
+				284AB16A25B95CDF008C4894 /* GameDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -104,6 +104,13 @@ extension GameListViewController: UITableViewDelegate {
             newGameListAPICall()
         }
     }
+    
+    // 셀을 클릭했을 때 PageViewController로 이동
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let gameDetailViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GameDetailViewController") as? GameDetailViewController else { return }
+        gameDetailViewController.model = model?.contents[indexPath.row]
+        navigationController?.pushViewController(gameDetailViewController, animated: true)
+    }
 }
 extension GameListViewController: UITableViewDataSource {
     // 몇개의 셀(열)이 필요한가?
